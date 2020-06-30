@@ -32,7 +32,7 @@ var app *buffalo.App
 // declared after it to never be called.
 func App() *buffalo.App {
 	if app == nil {
-		app = buffalo.New(buffalo.Options{
+		app = buffalo.New(buffalo.Options{0
 			Env:          ENV,
 			SessionStore: sessions.Null{},
 			PreWares: []buffalo.PreWare{
